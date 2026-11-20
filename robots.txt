@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /panel/
+Disallow: /api/
+Disallow: /data/
+Disallow: /includes/
+Disallow: /config.php
+
+Allow: /servicios
+Allow: /guias
+Allow: /guias/
+Allow: /instaladores
+Allow: /net-billing-chile
+Allow: /kit-solar-off-grid-parcelas
+Allow: /bombeo-solar-agricola
+Allow: /paneles-solares-empresas
+
+Sitemap: https://panelsolarnorte.cl/sitemap.xml
