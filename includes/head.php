@@ -40,7 +40,7 @@ $ogImage = absolute_url((string) ($page['og_image'] ?? '/assets/img/casa-paneles
   <meta name="twitter:image" content="<?= e($ogImage) ?>">
   <link rel="icon" href="/assets/img/logo-icon.jpg" type="image/jpeg">
   <link rel="apple-touch-icon" href="/assets/img/logo-icon.jpg">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=10">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=11">
   <?php if (!empty($page['schema']) && is_array($page['schema'])): ?>
     <?= json_ld($page['schema']) ?>
   <?php endif; ?>

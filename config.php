@@ -20,7 +20,8 @@ if (basename($_SERVER['SCRIPT_FILENAME'] ?? '') === 'config.php') {
 return [
     'site_name' => 'Panel Solar Norte',
     'base_url' => 'https://panelsolarnorte.cl',
-    'alert_email' => 'alertas@panelsolarnorte.cl',
+    // Por ahora un solo destino: alertas del formulario.
+    'alert_email' => 'zerobit@outlook.com',
     'from_email' => 'no-reply@panelsolarnorte.cl',
     // Fallback global (plaza vacante o comuna sin mapear). Solo dígitos con código de país.
     'whatsapp' => '56911111111',
@@ -36,7 +37,7 @@ return [
             'estado' => 'activa',
             'arrendatario_nombre' => 'Instalador Elqui',
             'whatsapp' => '56911111111',
-            'email' => 'elqui@panelsolarnorte.cl',
+            'email' => '',
             'user' => 'elqui',
         ],
         'limari' => [
@@ -54,7 +55,7 @@ return [
             'estado' => 'activa',
             'arrendatario_nombre' => 'Instalador Huasco',
             'whatsapp' => '56911111111',
-            'email' => 'atacama@panelsolarnorte.cl',
+            'email' => '',
             'user' => 'huasco',
         ],
     ],
@@ -63,14 +64,14 @@ return [
             'password_hash' => '$2y$12$hVSliwJes.KT8ij5odVPlO.2c3NwID9HPjMJh/W95hNUm6amCijrW',
             'role' => 'admin',
             'name' => 'Administración',
-            'email' => 'alertas@panelsolarnorte.cl',
+            'email' => 'zerobit@outlook.com',
             'zonas' => ['la-serena', 'coquimbo', 'ovalle', 'copiapo', 'vallenar'],
         ],
         'elqui' => [
             'password_hash' => '$2y$12$ozj5sWy0pju4V7dwQh7OX.6xAFQi.KREarLXl5eEXGRzyUQYYKujK',
             'role' => 'instalador',
             'name' => 'Instalador Elqui',
-            'email' => 'elqui@panelsolarnorte.cl',
+            'email' => '',
             'zonas' => ['la-serena', 'coquimbo'],
             'plaza' => 'elqui',
         ],
@@ -78,7 +79,7 @@ return [
             'password_hash' => '$2y$12$PZ.BZFj8d6ysCBhBH52GneXwbgkbrgfYxINgDEelVRbgvAkFt0iSO',
             'role' => 'instalador',
             'name' => 'Instalador Huasco',
-            'email' => 'atacama@panelsolarnorte.cl',
+            'email' => '',
             'zonas' => ['copiapo', 'vallenar'],
             'plaza' => 'atacama',
         ],

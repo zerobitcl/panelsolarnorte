@@ -2,6 +2,7 @@
 declare(strict_types=1);
 /** @var array $page */
 $year = date('Y');
+$contactEmail = (string) (site_config()['alert_email'] ?? '');
 ?>
 <footer class="site-footer">
   <div class="wrap footer-grid footer-grid-4">
@@ -10,6 +11,9 @@ $year = date('Y');
         <img src="/assets/img/logo-full.jpg" width="220" height="80" alt="Panel Solar Norte — Energía del Norte Chico" decoding="async" loading="lazy">
       </p>
       <p>Evaluación de proyectos fotovoltaicos en las regiones de Coquimbo y Atacama. La conexión on-grid la declara un instalador eléctrico autorizado ante la SEC (formulario TE4) y la habilita la distribuidora.</p>
+      <?php if ($contactEmail !== ''): ?>
+        <p class="footer-email">Contacto: <a href="mailto:<?= e($contactEmail) ?>"><?= e($contactEmail) ?></a></p>
+      <?php endif; ?>
     </div>
     <div>
       <p class="footer-title">Comunas</p>
