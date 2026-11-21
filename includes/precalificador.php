@@ -22,11 +22,11 @@ $origenDefault = 'hero';
   <div class="wizard-head">
     <p class="eyebrow">Evaluación sin costo · 30 segundos</p>
     <h2 id="wizard-title">Cuéntanos el proyecto</h2>
-    <p id="wizard-status" class="wizard-status" aria-live="polite">Paso 1 de 3: tipo de proyecto</p>
-    <ol class="dots" aria-hidden="true">
-      <li data-dot class="is-on"></li>
-      <li data-dot></li>
-      <li data-dot></li>
+    <p id="wizard-status" class="wizard-status sr-only" aria-live="polite">Paso 1 de 3: tipo de proyecto</p>
+    <ol class="steps-bar" aria-hidden="true">
+      <li data-dot class="is-on"><span class="steps-num">1</span><span class="steps-label">Tipo</span></li>
+      <li data-dot><span class="steps-num">2</span><span class="steps-label">Gasto</span></li>
+      <li data-dot><span class="steps-num">3</span><span class="steps-label">Contacto</span></li>
     </ol>
   </div>
   <form id="form-proyecto" method="post" action="/api/lead.php" novalidate

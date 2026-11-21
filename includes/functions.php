@@ -286,6 +286,18 @@ function e(?string $value): string
     return htmlspecialchars($value ?? '', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
 
+/** Resalta “Paneles Solares” en un H1 ya escapado de forma segura. */
+function highlight_h1(string $text): string
+{
+    $safe = e($text);
+    return (string) preg_replace(
+        '/(Paneles Solares)/iu',
+        '<span class="h1-accent">$1</span>',
+        $safe,
+        1
+    );
+}
+
 function base_url(): string
 {
     return rtrim((string) site_config()['base_url'], '/');

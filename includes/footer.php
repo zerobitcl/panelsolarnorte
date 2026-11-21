@@ -47,11 +47,11 @@ $year = date('Y');
   </div>
 <?php endif; ?>
 <?php if (!empty($page['panel'])): ?>
-  <script src="/assets/js/panel.js?v=4" defer></script>
+  <script src="/assets/js/panel.js?v=5" defer></script>
 <?php else: ?>
-  <script src="/assets/js/app.js?v=4" defer></script>
+  <script src="/assets/js/app.js?v=8" defer></script>
   <?php if (!empty($page['calc'])): ?>
-    <script src="/assets/js/calc.js?v=4" defer></script>
+    <script src="/assets/js/calc.js?v=8" defer></script>
   <?php endif; ?>
 <?php endif; ?>
 </body>

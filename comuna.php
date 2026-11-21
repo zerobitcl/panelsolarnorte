@@ -85,7 +85,7 @@ $hijos = satelites_de($esSatelite ? $madreSlug : $slug);
         <div class="hero-grid">
           <div class="hero-copy">
             <p class="eyebrow"><?= e($comuna['eyebrow']) ?></p>
-            <h1><?= e($comuna['h1']) ?></h1>
+            <h1><?= highlight_h1((string) $comuna['h1']) ?></h1>
             <?php
               $leadRaw = str_replace(['\\n\\n', '\\n'], ["\n\n", "\n"], (string) $comuna['lead']);
               foreach (preg_split("/\n\n+/", $leadRaw) ?: [] as $p):

@@ -284,10 +284,13 @@
       step.hidden = stepIndex !== current;
     });
     dots.forEach(function (dot, dotIndex) {
-      dot.classList.toggle("is-on", dotIndex <= current);
+      dot.classList.toggle("is-on", dotIndex === current);
+      dot.classList.toggle("is-done", dotIndex < current);
     });
     const label = steps[current].getAttribute("data-label") || "";
-    status.textContent = "Paso " + (current + 1) + " de 3: " + label;
+    if (status) {
+      status.textContent = "Paso " + (current + 1) + " de 3: " + label;
+    }
     backButton.hidden = current === 0;
     const last = current === steps.length - 1;
     nextButton.hidden = last;

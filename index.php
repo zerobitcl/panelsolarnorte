@@ -78,7 +78,7 @@ require __DIR__ . '/includes/header.php';
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">Norte Chico · Coquimbo y Atacama</p>
-        <h1>Instalación de Paneles Solares en las Regiones de Coquimbo y Atacama</h1>
+        <h1>Instalación de <span class="h1-accent">Paneles Solares</span> en las Regiones de Coquimbo y Atacama</h1>
         <p class="lead">Diseñamos tres encargos distintos: bajar la boleta con un sistema on-grid y Ley de Net Billing, electrificar una parcela que todavía no tiene empalme, o mover agua de un pozo con bombeo solar. La visita y el trámite SEC TE4 los hace un instalador eléctrico autorizado de la zona.</p>
         <ul class="badges">
           <li>Trámite SEC TE4</li>
