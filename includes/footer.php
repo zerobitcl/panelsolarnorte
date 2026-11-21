@@ -12,7 +12,7 @@ $contactEmail = (string) (site_config()['alert_email'] ?? '');
       </p>
       <p>Evaluación de proyectos fotovoltaicos en las regiones de Coquimbo y Atacama. La conexión on-grid la declara un instalador eléctrico autorizado ante la SEC (formulario TE4) y la habilita la distribuidora.</p>
       <?php if ($contactEmail !== ''): ?>
-        <p class="footer-email">Contacto: <a href="mailto:<?= e($contactEmail) ?>"><?= e($contactEmail) ?></a></p>
+        <p class="footer-email">Contacto: <?= e($contactEmail) ?></p>
       <?php endif; ?>
     </div>
     <div>
