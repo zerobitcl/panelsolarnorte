@@ -71,7 +71,10 @@ require __DIR__ . '/includes/head.php';
 require __DIR__ . '/includes/header.php';
 ?>
 <main id="contenido">
-  <header class="hero">
+  <header class="hero hero-photo">
+    <div class="hero-media" aria-hidden="true">
+      <img src="/assets/img/instalacion-techo.jpg" width="1600" height="900" alt="" fetchpriority="high" decoding="async">
+    </div>
     <div class="wrap hero-grid">
       <div class="hero-copy">
         <p class="eyebrow">Norte Chico · Coquimbo y Atacama</p>
@@ -101,21 +104,21 @@ require __DIR__ . '/includes/header.php';
       <h2 id="sistemas-titulo">On-grid, off-grid y bombeo solar</h2>
       <p class="section-lead">No se parte por la cantidad de paneles. Se parte por si existe medidor, si el consumo es de día y si el problema real es la boleta, la noche sin red o el diésel del riego.</p>
       <div class="grid-3">
-        <article class="card">
-          <span class="card-icon"><?= icon('bolt') ?></span>
+        <article class="card card-media">
+          <img src="/assets/img/casa-paneles.jpg" width="480" height="300" alt="Casa con sistema solar on-grid" loading="lazy" decoding="async">
           <h3>On-grid: ahorro de boleta e inyección</h3>
           <p>Casa o pyme con empalme CGE. De día consumes lo que produces. El excedente se inyecta y se descuenta en la boleta bajo la Ley 20.571, ampliada por la Ley 21.118, hasta 300 kW. El instalador autorizado ingresa el TE4 a la SEC y la distribuidora cambia el medidor a bidireccional.</p>
           <p>No borra el cargo fijo ni lo que enciendes de noche. Por eso una casa vacía hasta las 21:00 rinde menos que un local o un aire acondicionado diurno.</p>
         </article>
-        <article class="card">
-          <span class="card-icon"><?= icon('home') ?></span>
+        <article class="card card-media">
+          <img src="/assets/img/sistema-offgrid.jpg" width="480" height="300" alt="Batería e inversor de sistema off-grid" loading="lazy" decoding="async">
           <h3>Off-grid: parcela sin empalme</h3>
           <p>Cuando la factibilidad de red sale más cara que el uso del sitio, el sistema lleva baterías e inversor cargador. No se conecta a CGE y no corresponde venderlo como Net Billing.</p>
           <p>La batería sale de una lista de cargas nocturnas. Refrigerador, luces y bomba chica es un proyecto. Aire acondicionado toda la noche es otro, y mucho más caro.</p>
         </article>
-        <article class="card">
-          <span class="card-icon"><?= icon('drop') ?></span>
-          <h3>Bombeo solar: agua en horas de sol</h3>
+        <article class="card card-media">
+          <img src="/assets/img/instalacion-techo.jpg" width="480" height="300" alt="Instalación de paneles en techo de campo" loading="lazy" decoding="async">
+          <h3>Bombeo e instalación en terreno</h3>
           <p>En el Limarí y en el Huasco el encargo suele ser un pozo, no un techo. Si el riego puede correr de día, el arreglo alimenta la bomba y el tranque hace de reserva. La batería solo entra si hay turno nocturno o una casa en el mismo predio.</p>
           <p>Sin profundidad, caudal y desnivel no hay potencia seria. Esos datos valen más que la marca del módulo.</p>
         </article>

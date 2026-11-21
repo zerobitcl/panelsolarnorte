@@ -93,18 +93,18 @@ $testimonios = is_array($comuna) ? ($comuna['testimonios'] ?? []) : [];
       </article>
     </div>
 
-    <div class="svg-systems" aria-hidden="true">
-      <figure class="card compact">
-        <svg viewBox="0 0 160 90" width="160" height="90"><rect x="10" y="40" width="80" height="40" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 40 50 18l30 22" fill="none" stroke="currentColor" stroke-width="2"/><rect x="95" y="28" width="50" height="30" fill="none" stroke="#d97706" stroke-width="2"/><path d="M100 38h40M100 48h40" stroke="#d97706"/></svg>
+    <div class="photo-systems">
+      <figure class="photo-card">
+        <img src="/assets/img/casa-paneles.jpg" width="640" height="400" alt="Casa con paneles solares on-grid en techo" loading="lazy" decoding="async">
         <figcaption>On-grid en techo</figcaption>
       </figure>
-      <figure class="card compact">
-        <svg viewBox="0 0 160 90" width="160" height="90"><rect x="20" y="35" width="55" height="40" fill="none" stroke="currentColor" stroke-width="2"/><rect x="90" y="45" width="40" height="25" fill="none" stroke="#d97706" stroke-width="2"/><circle cx="110" cy="30" r="12" fill="none" stroke="#d97706" stroke-width="2"/></svg>
+      <figure class="photo-card">
+        <img src="/assets/img/sistema-offgrid.jpg" width="640" height="400" alt="Sistema off-grid con batería e inversor" loading="lazy" decoding="async">
         <figcaption>Off-grid con batería</figcaption>
       </figure>
-      <figure class="card compact">
-        <svg viewBox="0 0 160 90" width="160" height="90"><circle cx="40" cy="55" r="18" fill="none" stroke="currentColor" stroke-width="2"/><path d="M40 37v-12M70 55h40" stroke="currentColor" stroke-width="2"/><rect x="110" y="25" width="35" height="25" fill="none" stroke="#d97706" stroke-width="2"/></svg>
-        <figcaption>Bombeo a tranque</figcaption>
+      <figure class="photo-card">
+        <img src="/assets/img/instalacion-techo.jpg" width="640" height="400" alt="Cuadrilla instalando paneles solares en techo" loading="lazy" decoding="async">
+        <figcaption>Instalación en obra</figcaption>
       </figure>
     </div>
   </div>

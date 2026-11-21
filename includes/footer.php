@@ -6,7 +6,9 @@ $year = date('Y');
 <footer class="site-footer">
   <div class="wrap footer-grid footer-grid-4">
     <div>
-      <p class="footer-brand">Panel Solar Norte</p>
+      <p class="footer-brand">
+        <img src="/assets/img/logo-full.jpg" width="220" height="80" alt="Panel Solar Norte — Energía del Norte Chico" decoding="async" loading="lazy">
+      </p>
       <p>Evaluación de proyectos fotovoltaicos en las regiones de Coquimbo y Atacama. La conexión on-grid la declara un instalador eléctrico autorizado ante la SEC (formulario TE4) y la habilita la distribuidora.</p>
     </div>
     <div>
@@ -45,11 +47,11 @@ $year = date('Y');
   </div>
 <?php endif; ?>
 <?php if (!empty($page['panel'])): ?>
-  <script src="/assets/js/panel.js?v=3" defer></script>
+  <script src="/assets/js/panel.js?v=4" defer></script>
 <?php else: ?>
-  <script src="/assets/js/app.js?v=3" defer></script>
+  <script src="/assets/js/app.js?v=4" defer></script>
   <?php if (!empty($page['calc'])): ?>
-    <script src="/assets/js/calc.js?v=3" defer></script>
+    <script src="/assets/js/calc.js?v=4" defer></script>
   <?php endif; ?>
 <?php endif; ?>
 </body>

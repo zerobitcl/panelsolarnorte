@@ -8,10 +8,10 @@ $cta = (!empty($page['panel']) || !empty($page['error404'])) ? '/#precalificador
 <header class="site-header">
   <div class="wrap header-bar">
     <a class="logo" href="/" aria-label="Panel Solar Norte, inicio">
-      <?= icon('sun') ?>
+      <img class="logo-mark" src="/assets/img/logo-icon.jpg" width="48" height="48" alt="" decoding="async">
       <span>
         <strong>Panel Solar Norte</strong>
-        <small>Norte Chico · IV y III Región</small>
+        <small>Energía del Norte Chico</small>
       </span>
     </a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-principal">

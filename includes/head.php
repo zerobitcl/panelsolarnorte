@@ -10,7 +10,7 @@ $noindex = stripos($robots, 'noindex') !== false;
 $canonical = absolute_url((string) ($page['path'] ?? '/'));
 $title = (string) $page['title'];
 $description = (string) $page['description'];
-$ogImage = absolute_url('/assets/img/og-panel-solar-norte.svg');
+$ogImage = absolute_url((string) ($page['og_image'] ?? '/assets/img/casa-paneles.jpg'));
 ?>
 <!DOCTYPE html>
 <html lang="es-CL">
@@ -33,13 +33,14 @@ $ogImage = absolute_url('/assets/img/og-panel-solar-norte.svg');
   <meta property="og:description" content="<?= e($description) ?>">
   <meta property="og:url" content="<?= e($canonical) ?>">
   <meta property="og:image" content="<?= e($ogImage) ?>">
-  <meta property="og:image:alt" content="Panel Solar Norte — Coquimbo y Atacama">
+  <meta property="og:image:alt" content="Panel Solar Norte — Energía del Norte Chico">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<?= e($title) ?>">
   <meta name="twitter:description" content="<?= e($description) ?>">
   <meta name="twitter:image" content="<?= e($ogImage) ?>">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230F172A'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23F59E0B'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=3">
+  <link rel="icon" href="/assets/img/logo-icon.jpg" type="image/jpeg">
+  <link rel="apple-touch-icon" href="/assets/img/logo-icon.jpg">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=4">
   <?php if (!empty($page['schema']) && is_array($page['schema'])): ?>
     <?= json_ld($page['schema']) ?>
   <?php endif; ?>
