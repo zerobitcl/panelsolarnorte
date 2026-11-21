@@ -82,7 +82,7 @@ $origenDefault = 'hero';
       <legend>Gasto actual y plazo</legend>
       <p class="micro">Esto prioriza tu evaluación. Toma 10 segundos.</p>
       <p class="field-label" id="gasto-label">Gasto mensual en electricidad</p>
-      <div class="choices" role="radiogroup" aria-labelledby="gasto-label">
+      <div class="choices choices-chips" role="radiogroup" aria-labelledby="gasto-label">
         <?php foreach ($catalog['gastos'] as $code => $label): ?>
           <label class="choice">
             <input type="radio" name="gasto_luz" value="<?= e($code) ?>" data-label="<?= e($label) ?>">
@@ -91,7 +91,7 @@ $origenDefault = 'hero';
         <?php endforeach; ?>
       </div>
       <p class="field-label" id="plazo-label">¿Para cuándo lo necesitas?</p>
-      <div class="choices" role="radiogroup" aria-labelledby="plazo-label">
+      <div class="choices choices-chips" role="radiogroup" aria-labelledby="plazo-label">
         <?php foreach ($catalog['plazos'] as $code => $label): ?>
           <label class="choice">
             <input type="radio" name="plazo" value="<?= e($code) ?>" data-label="<?= e($label) ?>" data-auto-plazo>
